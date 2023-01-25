@@ -4,10 +4,11 @@ This will be a template for me to use on my full-stack applications, this reposi
 
 ## Eslint Configuration
 
-I will not include one eslint config file. This is for many reasons one being that eslint has many configurations for installing,
+I included a eslint config, but you may need to re-configure it. This is for many reasons one being that eslint has many configurations for installing,
 for example if you install eslint globally, ```npm install -g eslint```, and you run the command in a project it will give you tons of
 options to configure your eslint according to what technologies you will be using in your application.
 
-So instead I included docs for vue and regular javascript eslint and .vscode settings:\
-[vue-docs](./docs/vue-settings/README.md)\
-[js-docs](./docs/js-settings/README.md)
+So instead I included docs for vue with eslint and .vscode settings:\
+[vue-docs](./docs/vue-settings/README.md)
+
+## Workflows 

@@ -8,7 +8,4 @@ I included a eslint config, but you may need to re-configure it. This is for man
 for example if you install eslint globally, ```npm install -g eslint```, and you run the command,```eslint --init```, in a project it will give you tons of
 options to configure your eslint according to what technologies you will be using in your application.
 
-So instead I included docs for vue with eslint and .vscode settings:\
-[vue-docs](./docs/vue-settings/README.md)
-
 ## Workflows 

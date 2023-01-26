@@ -1,13 +1,17 @@
-/* eslint-env node */
 module.exports = {
-  root: true,
-  "extends": [
-    "eslint:recommended"
-  ],
-  parserOptions: {
-    ecmaVersion: "latest"
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
   },
-  rules: {
+  "extends": "eslint:recommended",
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
     // usually the var keyword has unexpected behavior, let and const are more consistent
     "no-var": "error",
     // if a variable isn't used it will warn you, not an error because the var might be used somewhere else

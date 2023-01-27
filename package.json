@@ -4,7 +4,7 @@
   "description": "A starter for full-stack applications.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/backend/server/index.js"
+    "start": "nodemon src/server/index.js"
   },
   "repository": {
     "type": "git",

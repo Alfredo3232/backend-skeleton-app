@@ -26,17 +26,17 @@ module.exports = {
         // I think that adding semi-colons is a good practice because it might help solve some issues and 
         // the interpreter doesn't have to guess where your line ended
         "semi": [
-          "error",
-          "always"
+            "error",
+            "always"
         ],
         // this is personal choice, and for the sake of consistency I made it an error
         "quotes": [
-          "error",
-          "double",
-          {
-            "avoidEscape": true,
-            "allowTemplateLiterals": true
-          }
+            "error",
+            "double",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
         ]
-      }
+    }
 };

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A starter for full-stack applications.",
   "main": "index.js",
+  "type" :"module",
   "scripts": {
     "start": "nodemon src/server/index.js"
   },

@@ -8,10 +8,10 @@ This will be a template for me to use on my full-stack applications, this reposi
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Starting the Server
 
 ```sh
-npm run dev
+npm run start
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
@@ -27,6 +27,3 @@ for example if you install eslint globally, ```npm install -g eslint```, and you
 options to configure your eslint according to what technologies you will be using in your application.
 
 ## Workflows
-
-
-## 

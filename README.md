@@ -1,6 +1,24 @@
-# full-stack-skeleton-app
+# backend-skeleton-app
 
 This will be a template for me to use on my full-stack applications, this repository will basically be a starter for new applications, feel free to use it for your own apps as well.
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Starting the Server
+
+```sh
+npm run start
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
 
 ## Eslint Configuration
 

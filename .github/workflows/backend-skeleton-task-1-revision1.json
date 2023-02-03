@@ -1,10 +1,11 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:650438707582:task-definition/backend-skeleton-task-1:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:650438707582:task-definition/backend-skeleton-task-1:2",
     "containerDefinitions": [
         {
             "name": "skeleton-container-1",
             "image": "public.ecr.aws/docker/library/ubuntu:rolling",
-            "cpu": 0,
+            "cpu": 1024,
+            "memory": 1024,
             "portMappings": [
                 {
                     "name": "port",
@@ -38,9 +39,10 @@
         }
     ],
     "family": "backend-skeleton-task-1",
+    "taskRoleArn": "arn:aws:iam::650438707582:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::650438707582:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -52,6 +54,9 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
@@ -72,12 +77,12 @@
         "FARGATE"
     ],
     "cpu": "1024",
-    "memory": "3072",
+    "memory": "2048",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-03T01:39:51.298Z",
+    "registeredAt": "2023-02-03T02:16:18.352Z",
     "registeredBy": "arn:aws:iam::650438707582:root",
     "tags": [
         {

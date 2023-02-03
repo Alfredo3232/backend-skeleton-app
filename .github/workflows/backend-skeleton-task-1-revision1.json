@@ -1,11 +1,11 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:650438707582:task-definition/backend-skeleton-task-1:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:650438707582:task-definition/backend-skeleton-task-1:4",
     "containerDefinitions": [
         {
             "name": "skeleton-container-1",
-            "image": "public.ecr.aws/docker/library/ubuntu:rolling",
+            "image": "public.ecr.aws/docker/library/node:19.6.0-slim",
             "cpu": 1024,
-            "memory": 1024,
+            "memory": 2048,
             "portMappings": [
                 {
                     "name": "port",
@@ -42,7 +42,7 @@
     "taskRoleArn": "arn:aws:iam::650438707582:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::650438707582:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -82,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-03T02:16:18.352Z",
+    "registeredAt": "2023-02-03T02:31:07.298Z",
     "registeredBy": "arn:aws:iam::650438707582:root",
     "tags": [
         {

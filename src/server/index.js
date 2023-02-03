@@ -2,7 +2,7 @@
 // disabled for development.
 import express from "express";
 import helmet from "helmet";
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 
 let app = express();
 const PORT = 3000;
@@ -22,12 +22,13 @@ app.listen(PORT, () => {
     at least for right now I am thinking of using the MongoDB online service, since it will be more cost effective using different services
     to handle the work.
 */
- mongoose
-    .connect("", { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
-    .then(() => {
-        app.listen(PORT || 5000);
-        console.log("Connected MongoDB");
-    })
-    .catch(err => {
-        console.log(err);
-    });
+
+//  mongoose
+//     .connect("", { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
+//     .then(() => {
+//         app.listen(PORT || 5000);
+//         console.log("Connected MongoDB");
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });

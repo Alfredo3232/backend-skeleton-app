@@ -10,7 +10,7 @@ const PORT = 3000;
 app.use(helmet());
 
 app.get("/", function (req, res) {
-    res.send("Hello World");
+    res.send("Testing a ec2 instance");
 });
 
 app.listen(PORT, () => {

@@ -23,7 +23,7 @@ module.exports = {
         "no-dupe-keys": "error",
         // the debugger is only a testing tool and could break your application
         "no-debugger": "error",
-        // I think that adding semi-colons is a good practice because it might help solve some issues and 
+        // I think that adding semi-colons is a good practice because it might help solve some issues and
         // the interpreter doesn't have to guess where your line ended
         "semi": [
             "error",

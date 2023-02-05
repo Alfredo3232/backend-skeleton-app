@@ -37,6 +37,7 @@ module.exports = {
                 "avoidEscape": true,
                 "allowTemplateLiterals": true
             }
-        ]
+        ],
+        "no-trailing-spaces": ["error"]
     }
 };

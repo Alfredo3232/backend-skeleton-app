@@ -18,7 +18,7 @@ module.exports = {
         "no-unused-vars": "warn",
         // leaving console logs is a bad practice and should only be used during development
         "no-console": "warn",
-        // having duplicates is unnesscary and degrades performance
+        // having duplicates is unnecessary and degrades performance
         "no-duplicate-imports": "error",
         "no-dupe-keys": "error",
         // the debugger is only a testing tool and could break your application
@@ -38,6 +38,9 @@ module.exports = {
                 "allowTemplateLiterals": true
             }
         ],
-        "no-trailing-spaces": ["error"]
+        // leaving spaces is unnecessary, and for the sake of consistency I made it an error
+        "no-trailing-spaces": [
+            "error"
+        ]
     }
 };

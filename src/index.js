@@ -1,13 +1,15 @@
-/* eslint-disable no-console */
-// disabled for development.
 import express from "express";
 import helmet from "helmet";
+import cors from "cors";
 // import mongoose from "mongoose";
 
-let app = express();
+const app = express();
 const PORT = 3000;
 
+// Middleware
+app.use(express.json());
 app.use(helmet());
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.send("Testing a ec2 instance");
@@ -18,7 +20,7 @@ app.get("/api", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Running at PORT: ${PORT}`);
+    process.stdout.write("Running at ---------------> " + `\x1b[3m\x1b[96mhttp://127.0.0.1:${PORT}\x1b[39m\x1b[23\x1b[0m` + "\n");
 });
 
 /*
